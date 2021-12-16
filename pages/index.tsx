@@ -24,11 +24,11 @@ function nav(event: any) {
 	if (st > lastScrollTop) {
 		(_a = document.getElementById("nav")) === null || _a === void 0
 			? void 0
-			: _a.classList.add("top-[-5rem]");
+			: _a.classList.remove("top-0");_a.classList.add("top-[-5rem]");
 	} else {
 		(_b = document.getElementById("nav")) === null || _b === void 0
 			? void 0
-			: _b.classList.remove("top-[-5rem]");
+			: _b.classList.remove("top-[-5rem]");_b.classList.add("top-0");
 	}
 	lastScrollTop = st;
 }
@@ -54,8 +54,8 @@ export default function Example() {
 
 	useEffect(() => {
 		document.addEventListener("scroll", nav);
-		setMounted(true);
 		if (theme === "dark") setEnabled(true);
+		setMounted(true);
 	}, []);
 
 	return (
@@ -176,7 +176,7 @@ export default function Example() {
 											<div>
 												<svg
 													width="500"
-													className="h-10 w-10"
+													className="h-8 w-8"
 													height="500"
 													viewBox="0 0 500 500"
 													fill="none"
@@ -236,8 +236,7 @@ export default function Example() {
 												<a
 													key={item.name}
 													href={"#" + item.href}
-													onClick={(e) => navclick(e)}
-													className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 hover:bg-gray-50"
+													className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-white hover:text-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800"
 												>
 													{item.name}
 												</a>
