@@ -24,11 +24,11 @@ function nav(event: any) {
 	if (st > lastScrollTop) {
 		(_a = document.getElementById("nav")) === null || _a === void 0
 			? void 0
-			: _a.classList.remove("top-0");_a.classList.add("top-[-5rem]");
+			: _a.classList.remove("top-0");_a.classList.add("top-[-6rem]");
 	} else {
 		(_b = document.getElementById("nav")) === null || _b === void 0
 			? void 0
-			: _b.classList.remove("top-[-5rem]");_b.classList.add("top-0");
+			: _b.classList.remove("top-[-6rem]");_b.classList.add("top-0");
 	}
 	lastScrollTop = st;
 }
@@ -99,7 +99,7 @@ export default function Example() {
 												</svg>
 											</a>
 											<div className="-mr-2 flex items-center md:hidden">
-												<Popover.Button className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+												<Popover.Button onClick={(e) => {document.body.classList.add("blur-sm")}} className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
 													<span className="sr-only">Open main menu</span>
 													<MenuIcon className="h-8 w-8" aria-hidden="true" />
 												</Popover.Button>
@@ -225,7 +225,7 @@ export default function Example() {
 												) : (
 													""
 												)}
-												<Popover.Button className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+												<Popover.Button onClick={(e) => {document.body.classList.remove("blur-sm")}} className="bg-white dark:bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
 													<span className="sr-only">Close main menu</span>
 													<XIcon className="h-6 w-6" aria-hidden="true" />
 												</Popover.Button>
@@ -276,7 +276,7 @@ export default function Example() {
 								<div className="mt-16 sm:mt-8 sm:flex justify-start">
 									<div className="rounded-md shadow w-[200px]">
 										<a
-											href="#"
+											href="#contact"
 											className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
 										>
 											Get in touch

@@ -5,7 +5,7 @@ function About() {
 		<>
 			<main id="about" className="max-w-7xl px-6 sm:px-6 lg:px-8 pt-36">
 				<div className="text-left lg:max-w-2xl">
-					<h3 className="text-lg text-base mono tracking-tight font-medium text-indigo-500 mb-20 md:text-lg">
+					<h3 className="text-lg text-base mono tracking-tight font-medium text-indigo-500 mb-12 sm:mb-20 md:text-lg">
 						<span className="inline">About Me</span>
 					</h3>
 					<p className="mt-3 text-base text-gray-500 dark:text-gray-400 sm:mt-5 text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
