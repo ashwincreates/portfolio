@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	height: 100%;
+	min-height: 100%;
+}
+
+::-webkit-scrollbar-track {
+	@apply dark:bg-gray-900 bg-white
+}
+
+.nav-active {
+	@apply px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-md transition-all ease-in-out;
+}
+
+#__next{
+	min-height: 100vh;
+}
+
+.mono {
+	font-family: 'Fira Mono';
+}
