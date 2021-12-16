@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import pic from "../public/srist.png";
-
 function Projects() {
 	return (
 		<>
@@ -12,7 +9,7 @@ function Projects() {
 					<div className="mt-10 sm:mt-24">
 						<section className="relative flex-col sm:flex-row flex justify-between max-w-5xl">
 							<div className="max-w-[500px] mr-auto">
-									<a href="https://sristspace.herokuapp.com" target="_blank" rel="noopener noreferrer"><Image src={pic} height="278" width="500"/></a>
+									<a href="https://sristspace.herokuapp.com" target="_blank" rel="noopener noreferrer"><img src="/portfolio/srist.png" height="278" width="500"/></a>
 							</div>
 							<div className="sm:w-2/6 mt-10 sm:mt-0">
 								<a href="https://sristspace.herokuapp.com" target="_blank" rel="noopener noreferrer"><h3 className="text-2xl font-regular sm:font-medium text-gray-900 dark:text-white">SRIST space 1.0</h3></a>
