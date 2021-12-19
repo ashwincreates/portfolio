@@ -283,7 +283,11 @@ export default function Example() {
 															{item.name}
 														</a>
 													))}
-													<a className="block px-3 py-2 rounded-md text-base font-medium text-indigo-500">
+													<a 
+													href="/portfolio/ashwin-sharma.pdf"
+													target="blank"
+													rel="noopener noreferrer"
+													className="block px-3 py-2 rounded-md text-base font-medium text-indigo-500">
 														<HiOutlineDocumentDownload
 															className="inline-block mr-1"
 															size={18}
