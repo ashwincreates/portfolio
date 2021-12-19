@@ -3,7 +3,7 @@ import {SiAngular, SiCplusplus, SiJava, SiMongodb, SiNodedotjs, SiPython, SiReac
 function About() {
 	return (
 		<>
-			<main id="about" className="max-w-7xl px-6 sm:px-6 lg:px-8 pt-36">
+			<main id="about" className="max-w-7xl px-6 [animation-delay:100ms] opacity-0 sm:px-6 lg:px-8 pt-36">
 				<div className="text-left lg:max-w-2xl">
 					<h3 className="text-lg text-base mono tracking-tight font-medium text-indigo-500 mb-12 sm:mb-20 md:text-lg">
 						<span className="inline">About Me</span>

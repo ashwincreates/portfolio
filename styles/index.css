@@ -7,16 +7,14 @@
 html {
 	width: 100%;
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-base-color: white;
 }
 
 body {
 	overflow-x: hidden;
 	height: 100%;
 	min-height: 100%;
-}
-
-::-webkit-scrollbar-track {
-	@apply dark:bg-gray-900 bg-white
 }
 
 .nav-active {
