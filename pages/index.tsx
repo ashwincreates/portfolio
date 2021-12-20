@@ -32,6 +32,11 @@ function nav(event: any) {
 			: _b.classList.remove("top-[-6rem]");
 		_b.classList.add("top-0");
 	}
+	if(lastScrollTop > 20 && document.getElementById("nav")) {
+		document.getElementById("nav").classList.add("drop-shadow-lg")
+	} else {
+		document.getElementById("nav").classList.remove("drop-shadow-lg")
+	}
 	lastScrollTop = st;
 }
 

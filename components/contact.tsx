@@ -12,7 +12,10 @@ function Contact() {
 	})
 	const [serverState, setServerState] = useState({
     submitting: false,
-    status: null
+    status: {
+			ok: false,
+			msg: ""
+		}
   });
 	const [fieldErrors, setFieldErrors] = useState({});
 	const validationRules = {
@@ -55,13 +58,16 @@ function Contact() {
     setServerState({ submitting: true, status: serverState.status });
     fetch("https://formspree.io/f/mjvlvzya", {
       method: "POST",
+			headers: {
+				'Accept': 'application/json'
+			},
       body: JSON.stringify(inputs)
     })
       .then(r => {
         	handleServerResponse(true, "Thanks!, your message has been sent");
       })
       .catch(r => {
-        	handleServerResponse(false, "Error Occured!");
+        		handleServerResponse(false, "Error Occured!");
       });
 		setIsOpen(false);
   };
@@ -110,9 +116,9 @@ function Contact() {
 							<BiPaperPlane className="mr-2 text-white" size={24} />
 							Pin me up!
 						</a>
-						{serverState.status?<>
-							<div className={`py-2 mt-4 rounded-md px-3 flex items-center justify-center gap-x-2 ${serverState.status.ok?"bg-green-200 text-green-900":"bg-rose-200 text-rose-900"} font-bold`}>
-								{serverState.status.ok?<FiCheckCircle size={16}/>:<FiXOctagon size={16}/>}{serverState.status.msg}
+						{serverState.status.msg != ""?<>
+							<div className={`py-2 mt-4 rounded-md px-3 flex justify-center gap-x-2 ${serverState.status.ok?"bg-green-200 text-green-900":"bg-rose-200 text-rose-900"} font-bold`}>
+								{serverState.status.ok?<FiCheckCircle className="mt-1" size={16}/>:<FiXOctagon className="mt-1" size={16}/>}{serverState.status.msg}
 							</div>
 						</>:""}
 						<Transition appear show={isOpen} as={Fragment}>
