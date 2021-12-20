@@ -135,7 +135,7 @@ export default function Example() {
 													</div>
 												</div>
 											</div>
-											<div className="hidden md:flex md:ml-10 md:pr-4 md:gap-x-8">
+											<div className="hidden md:flex md:items-center md:ml-10 md:pr-4 md:gap-x-8">
 												{navigation.map((item, i) => (
 													<a
 														key={item.name}
