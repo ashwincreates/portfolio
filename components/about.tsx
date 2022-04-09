@@ -19,14 +19,12 @@ Here are a few technologies I’ve recently worked with
 					<div className="mt-5 sm:mt-6 flex justify-start">
 						<ul className="">
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiTypescript className="inline"/> Typescript</li>
-							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiJava className="inline"/> Java</li>
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiPython className="inline"/> Python</li>
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiCplusplus className="inline"/> C++</li>
 						</ul>
 						<ul className="ml-12">
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiReact className="inline"/> React</li>
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiNodedotjs className="inline"/> NodeJs</li>
-							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiAngular className="inline"/> Angular</li>
 							<li className="mb-3 text-base font-medium text-indigo-500 text-md mono"><SiMongodb className="inline"/> MongoDB</li>
 						</ul>
 					</div>
